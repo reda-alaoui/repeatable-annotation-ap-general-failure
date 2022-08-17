@@ -6,6 +6,7 @@ import javax.persistence.Entity;
  * @author Réda Housni Alaoui
  */
 @Entity
+@MyAnnotation(foo)
 public class MyEntity {
 
 
