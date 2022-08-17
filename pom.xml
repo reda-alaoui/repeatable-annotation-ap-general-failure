@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.redaalaoui.repeatable_annotation_ap_general_failure</groupId>
+  <artifactId>repeatable-annotation-ap-general-failure</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <url>https://github.com/reda-alaoui/repeatable-annotation-ap-general-failure</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+    <source.level>1.8</source.level>
+
+    <jpa.version>2.2</jpa.version>
+    <hibernate.version>5.6.8.Final</hibernate.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>${jpa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-jpamodelgen</artifactId>
+      <version>${hibernate.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <developers>
+    <developer>
+      <id>reda-alaoui</id>
+      <email>reda-alaoui@hey.com</email>
+      <name>Réda Housni Alaoui</name>
+      <url>https://github.com/reda-alaoui</url>
+      <roles>
+        <role>Maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+</project>
