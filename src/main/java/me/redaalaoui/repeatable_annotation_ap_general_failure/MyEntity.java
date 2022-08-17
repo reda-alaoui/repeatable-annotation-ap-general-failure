@@ -6,6 +6,10 @@ import javax.persistence.Entity;
  * @author Réda Housni Alaoui
  */
 @Entity
+@MyAnnotations({
+	@MyAnnotation(foo),
+	@MyAnnotation(bar)
+})
 public class MyEntity {
 
 
